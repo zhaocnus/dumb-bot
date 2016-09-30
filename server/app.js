@@ -13,9 +13,11 @@ expressConfig(app);
 // config routes
 routesConfig(app);
 
+let port = process.env.port || 80;
+
 // start server
-app.listen(3333, () => {
-  console.log('App listening on port 3333!');
+app.listen(port, () => {
+  console.log('App listening on port ' + port);
 });
 
 // Expose app

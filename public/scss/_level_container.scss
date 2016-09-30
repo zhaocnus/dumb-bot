@@ -1,3 +1,13 @@
+body {
+  &.t1 { background: $pastel-1; }
+  &.t2 { background: $pastel-2; }
+  &.t3 { background: $pastel-3; }
+  &.t4 { background: $pastel-4; }
+  &.t5 { background: $pastel-5; }
+}
+
+p { font-size: 16px; line-height: 1.428; margin-bottom: 15px; }
+
 // level
 .level {
   position: relative;

@@ -1,0 +1,33 @@
+<div class="level">
+  <img src="{{level.image}}" />
+  <div class="inner">
+    {{#each level.actions}}
+      <input type="radio" name="btns" id="{{@key}}" class="btn-r"/>
+      <label for="{{@key}}" class="btn {{this}}"></label>
+    {{/each}}
+
+    <form method="post" action="/finishturn/{{level.id}}">
+      {{#each level.actions}}
+        <input type="radio" value="" name="{{@key}}" id="cancel-{{@key}}"/>
+        <label for="cancel-{{@key}}" class="btn-cancel {{@key}}">RESET</label>
+      {{/each}}
+
+      {{#each level.actions as |action actionKey|}}
+        {{#each ../level.tiles as |tile tileKey|}}
+          {{#if tile.notStartTile}}
+            <input type="radio" name="{{actionKey}}" value="{{tileKey}}"
+              id="{{actionKey}}_{{tileKey}}" class="tile-r"/>
+            <label class="tile {{actionKey}} {{action}}" for="{{actionKey}}_{{tileKey}}"
+              style="left: {{tile.x}}; top: {{tile.y}};">
+            </label>
+          {{/if}}
+        {{/each}}
+      {{/each}}
+      <input type="submit" value="Move" class="bt move"/>
+    </form>
+
+    <div class="avatar {{level.startDirection}}"
+      style="left: {{level.startTileCoord.x}}; top: {{level.startTileCoord.y}};">
+    </div>
+  </div>
+</div>

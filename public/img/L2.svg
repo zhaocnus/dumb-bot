@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="360px"
+	 height="473.4px" viewBox="-59 84.6 360 473.4" enable-background="new -59 84.6 360 473.4" xml:space="preserve">
+<g>
+	<g id="bg_copy">
+		<g>
+			<path d="M181.8,199.6l59.2,35.1v23.1l-95.2,83.2l36.2,21.3l-1,22.5l-80,92.4L1,373.2l0-23.1l80-47v-45.4L181.8,199.6 M181.8,195
+				l-2,1.2L79,254.3l-2,1.2v2.3v43.1l-78,45.8l-2,1.2l0,2.3l0,23.1l0,1.6l1.1,1.2l100,103.9l3,3.2l2.9-3.3l80-92.4l0.9-1.1l0.1-1.4
+				l1-22.5l0.1-2.4l-2.1-1.2l-31.4-18.5l91-79.5l1.4-1.2v-1.8v-23.1v-2.3l-2-1.2l-59.2-35.1L181.8,195L181.8,195z"/>
+		</g>
+	</g>
+	<g id="fill_copy">
+		<polygon fill="#666666" stroke="#000000" stroke-width="2" stroke-miterlimit="10" points="101,477.2 1,373.2 1,350.2 101,407.9
+					"/>
+		<polygon fill="#AAAAAA" stroke="#000000" stroke-width="2" stroke-miterlimit="10" points="101,380.1 241,257.8 241,234.7
+			101.5,315.5 		"/>
+		<polygon fill="#AAAAAA" stroke="#000000" stroke-width="2" stroke-miterlimit="10" points="182,362.3 101,407.9 101,477.2
+			181,384.8 		"/>
+		<polygon fill="#666666" stroke="#000000" stroke-width="2" stroke-miterlimit="10" points="81,257.8 81,303.2 121,280.9 		"/>
+		<polygon fill="#FFFFFF" stroke="#000000" stroke-width="2" stroke-miterlimit="10" points="181.8,199.6 241,234.7 101.8,315
+			182,362.3 101,407.9 1,350.2 119,280.9 81,257.8 		"/>
+	</g>
+	<g id="dest_copy">
+		<polygon fill="#AD0000" stroke="#000000" stroke-miterlimit="10" points="181,200 201,211.6 181,223.1 161,211.6 		"/>
+		<polygon fill="#AD0000" stroke="#000000" stroke-miterlimit="10" points="100,384.6 120,396.1 100,407.7 80,396.1 		"/>
+	</g>
+</g>
+</svg>

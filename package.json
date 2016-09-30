@@ -1,0 +1,39 @@
+{
+  "name": "a_k_apart_server",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "nodemon ./server/index.js"
+  },
+  "author": "Xiaoyang Zhao",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "compression": "^1.6.2",
+    "express": "^4.14.0",
+    "express-handlebars": "^3.0.0",
+    "lodash": "^4.16.2",
+    "morgan": "^1.7.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.14.0",
+    "babel-core": "^6.14.0",
+    "babel-eslint": "^6.1.2",
+    "babel-plugin-transform-class-properties": "^6.11.5",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-register": "^6.14.0",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-eslint": "^3.0.1",
+    "gulp-imagemin": "^3.0.3",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-rev": "^7.1.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-usemin": "^0.3.24",
+    "install": "^0.8.1",
+    "nodemon": "^1.10.2",
+    "run-sequence": "^1.2.2"
+  }
+}

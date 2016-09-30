@@ -1,0 +1,10 @@
+node_modules
+.sass-cache
+.idea
+.DS_Store
+dist
+npm-debug.log
+coverage
+private
+scipts/output/*
+public/tmp

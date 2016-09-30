@@ -1,0 +1,21 @@
+body {
+  font-family: Sans-Serif;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  width: 100%;
+  min-height: 100%;
+  user-select: none;
+
+  &.t1 { background: $pastel-1; }
+  &.t2 { background: $pastel-2; }
+  &.t3 { background: $pastel-3; }
+  &.t4 { background: $pastel-4; }
+  &.t5 { background: $pastel-5; }
+}
+
+* { box-sizing: border-box; }
+*:focus { outline: none; }
+h1 { font-size: 32px; line-height: 1.1; margin-bottom: 30px; }
+p { font-size: 16px; line-height: 1.428; margin-bottom: 15px; }
+a { color: #000 !important; text-decoration: none !important; }

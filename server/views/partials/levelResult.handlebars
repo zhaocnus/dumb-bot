@@ -1,0 +1,27 @@
+<div class="level">
+  <img src="{{levelResult.levelData.image}}" />
+  <div class="inner">
+    <h1>MOVING</h1>
+
+    {{#each levelResult.actions}}
+      <label class="tile result {{this.className}}" style="left: {{this.x}}; top: {{this.y}};"></label>
+    {{/each}}
+
+    <div class="avatar {{#unless levelResult.didWin}}dead{{/unless}}"></div>
+  </div>
+</div>
+<div class="popup">
+  <div>
+    {{#if levelResult.didWin}}
+      <h1>You Won!</h1>
+      <h1>Score {{levelResult.score}}</h1>
+    {{else}}
+      <h1>You Lost!</h1>
+    {{/if}}
+    <p><a href="/" class="bt">Home</a></p>
+    {{#if levelResult.levelData.nextLevel}}
+      <p><a href="/level/{{levelResult.levelData.nextLevel}}" class="bt">Next level</a></p>
+    {{/if}}
+    <p><a href="/level/{{levelResult.levelData.id}}" class="bt">Play again</a></p>
+  </div>
+</div>

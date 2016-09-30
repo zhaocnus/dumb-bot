@@ -1,0 +1,7 @@
+<div class="hm">
+  <h1 class="ti">Help the dumb bot to find its way home</h1>
+  {{#each home.levels}}
+    <a class="icn" href="/level/{{this.id}}"
+      style="background-color:{{this.backgroundColor}};background-image:{{this.image}};">{{this.name}}</a>
+  {{/each}}
+</div>

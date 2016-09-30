@@ -1,0 +1,67 @@
+// btn and label
+input[type=radio] { display: none; }
+label { cursor: pointer; }
+
+// action btn
+// =========================
+.btn {
+  $tile-width: 12.5%;
+  display: inline-block;
+  width: $tile-width;
+  height: 360 * $tile-width / 473.4;
+  background: #FFF url(/img/arrow.svg) no-repeat center center;
+  background-size: 75%;
+  margin: 0 15px;
+  border: $border-thick;
+
+  &:hover { background-color: #EEE; }
+  &.d0 { transform: scaleY(0.56) rotate(45deg); }
+  &.d1 { transform: scaleY(0.56) rotate(135deg); }
+  &.d2 { transform: scaleY(0.56) rotate(225deg); }
+  &.d3 { transform: scaleY(0.56) rotate(315deg); }
+}
+.btn-r:checked + .btn {
+  border: $border-thick-selected;
+  background-color: #EEE;
+}
+.btn-cancel {
+  display: inline-block;
+  visibility: hidden;
+  width: 18%;
+  text-align: center;
+  font-weight: 900;
+}
+
+// form: user is using the form to put action buttons
+// =====================================================
+form { display: none; }
+.btn-r:checked ~ form { display: block; }
+
+// tiles: user
+// ===============================
+.tile {
+  $tile-width: 7.5%;
+  display: block;
+  position: absolute;
+  width: $tile-width;
+  height: 360 * $tile-width / 473.4;
+  color: #000;
+  background: rgba(0,0,0,0.05) no-repeat;
+  background-size: 100% 100%;
+  top: 0;
+  left: 0;
+
+  &:hover { background-color: rgba(0,0,0,0.3); }
+
+  &.d0 { transform: translate(-50%, -50%) scaleY(0.56) rotate(45deg); }
+  &.d1 { transform: translate(-50%, -50%) scaleY(0.56) rotate(135deg); }
+  &.d2 { transform: translate(-50%, -50%) scaleY(0.56) rotate(225deg); }
+  &.d3 { transform: translate(-50%, -50%) scaleY(0.56) rotate(315deg); }
+}
+
+.tile-r:checked + .tile,
+.tile.result {
+  background-image: url(/img/arrow.svg);
+  border: $border-tile;
+  z-index: 20;
+}

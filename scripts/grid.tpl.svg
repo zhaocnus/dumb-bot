@@ -1,0 +1,18 @@
+<svg version="1.1"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    width="{{width}}" height="{{height}}"
+    viewBox="{{viewBox}}">
+  <g stroke="rgba(255,0,0,0.1)" stroke-width="1" fill="none">
+  {{#each grid}}
+    <polygon points="{{this.points}}" />
+  {{/each}}
+  </g>
+  <g stroke="none" fill="rgb(255,0,0)" text-anchor="middle">
+  {{#each grid}}
+    <text font-family="Arial" x="{{this.centerX}}" y="{{this.centerY}}" font-size="8" transform="translate(0,3)">{{this.x}},{{this.y}}</text>
+  {{/each}}
+  </g>
+  <polygon stroke="rgba(255,0,0,0.1)" stroke-width="1" fill="none"
+      points="0,0 {{width}},0 {{width}},{{height}} 0,{{height}}" />
+</svg>

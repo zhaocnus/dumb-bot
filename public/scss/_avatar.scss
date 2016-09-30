@@ -1,0 +1,15 @@
+.avatar {
+  $tile-width: 8%;
+  position: absolute;
+  width: $tile-width;
+  height: 1.25 * 360 * $tile-width / 473.4;
+  background: transparent no-repeat center center;
+  background-size: contain;
+  transform: translate(-50%, -75%);
+  z-index: 30;
+
+  &.d0 { background-image: url(/img/d0.svg); }
+  &.d1 { background-image: url(/img/d1.svg); }
+  &.d2 { background-image: url(/img/d2.svg); }
+  &.d3 { background-image: url(/img/d3.svg); }
+}

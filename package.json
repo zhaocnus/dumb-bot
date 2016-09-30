@@ -1,10 +1,7 @@
 {
-  "name": "a_k_apart_server",
+  "name": "dumb_bot_xiaoyang",
   "version": "1.0.0",
   "description": "",
-  "scripts": {
-    "start": "nodemon ./server/index.js"
-  },
   "author": "Xiaoyang Zhao",
   "license": "ISC",
   "dependencies": {

@@ -7,7 +7,7 @@
       <label class="tile result {{this.className}}" style="left: {{this.x}}; top: {{this.y}};"></label>
     {{/each}}
 
-    <div class="avatar {{#unless levelResult.didWin}}dead{{/unless}}"></div>
+    <div class="avatar {{levelResult.levelData.startDirection}}"></div>
   </div>
 </div>
 <div class="popup">

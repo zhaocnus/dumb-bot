@@ -1,15 +1,14 @@
 .avatar {
-  $tile-width: 8%;
   position: absolute;
-  width: $tile-width;
-  height: 1.25 * 360 * $tile-width / 473.4;
-  background: transparent no-repeat center center;
-  background-size: contain;
+  width: 40px;
+  height: 60px;
+  background: transparent url(/img/a.svg) no-repeat;
+  background-size: auto 60px;
   transform: translate(-50%, -75%);
   z-index: 30;
 
-  &.d0 { background-image: url(/img/d0.svg); }
-  &.d1 { background-image: url(/img/d1.svg); }
-  &.d2 { background-image: url(/img/d2.svg); }
-  &.d3 { background-image: url(/img/d3.svg); }
+  &.d0 { background-position: 0 0; }
+  &.d1 { background-position: -40px 0; }
+  &.d2 { background-position: -80px 0; }
+  &.d3 { background-position: -120px 0; }
 }

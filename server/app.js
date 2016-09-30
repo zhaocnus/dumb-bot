@@ -13,7 +13,7 @@ expressConfig(app);
 // config routes
 routesConfig(app);
 
-let port = process.env.port || 80;
+let port = process.env.port || 3333;
 
 // start server
 app.listen(port, () => {

@@ -90,7 +90,7 @@ Level.prototype.getResult = function(data) {
   });
   keyframes = keyframes.join(' ');
 
-  let animation = 'ANIM 4s linear 1s 1 normal forwards';
+  let animation = 'ANIM 4s step-start 1s 1 normal forwards';
 
   let styles = `
     @-o-keyframes ANIM {${keyframes}}
@@ -107,7 +107,7 @@ Level.prototype.getResult = function(data) {
     }`;
 
   return {
-    score: 1000 - this.result.length,
+    score: 1000 - this.result.length * 10,
     actions: actionCoords,
     didWin: didWin,
     styles: styles,

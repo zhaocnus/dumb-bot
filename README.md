@@ -2,6 +2,6 @@
 
   * Created for the [10k apart contest](https://a-k-apart.com/)
 
-## Start app in dev mode: `gulp`
+  * Start app in dev mode: `gulp`
 
-## Build app: `gulp build`
+  * Build app: `gulp build`

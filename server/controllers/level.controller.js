@@ -1,3 +1,4 @@
+import { minify } from 'html-minifier';
 import Level from './Level';
 
 export const LEVELS = [
@@ -103,6 +104,9 @@ export function show(req, res) {
   res.render('index', {
     title: 'Level 1',
     level: level.getPlayData()
+  }, (err, html) => {
+    let minified = minify(html, { minifyCSS: true });
+    res.send(minified);
   });
 }
 
@@ -114,12 +118,9 @@ export function finishTurn(req, res) {
   res.render('index', {
     title: 'Level 1 result',
     levelResult: level.getResult(req.body)
-  });
-}
-
-export function showHome(req, res) {
-  res.render('index', {
-    title: 'Home'
+  }, (err, html) => {
+    let minified = minify(html, { minifyCSS: true });
+    res.send(minified);
   });
 }
 

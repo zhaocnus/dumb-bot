@@ -1,3 +1,4 @@
+import { minify } from 'html-minifier';
 import { LEVELS } from './level.controller';
 
 const HOME_DATA = {};
@@ -15,6 +16,9 @@ export function show(req, res) {
   res.render('index', {
     title: 'Home',
     home: HOME_DATA
+  }, (err, html) => {
+    let minified = minify(html, { minifyCSS: true });
+    res.send(minified);
   });
 }
 

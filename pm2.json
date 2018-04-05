@@ -2,7 +2,7 @@
   "apps": [
     {
       "exec_mode": "fork_mode",
-      "script": "dist/server/index.js",
+      "script": "./dist/server/index.js",
       "name": "dumb-bot",
       "node_args": [ "--harmony" ],
       "env": {

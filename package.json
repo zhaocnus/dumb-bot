@@ -4,6 +4,9 @@
   "description": "",
   "author": "Xiaoyang Zhao",
   "license": "ISC",
+  "scripts": {
+    "gulp": "gulp"
+  },
   "dependencies": {
     "body-parser": "^1.15.2",
     "compression": "^1.6.2",
